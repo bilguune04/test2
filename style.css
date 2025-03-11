@@ -1,0 +1,243 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    color: #333;
+    text-align: center;
+    padding-bottom: 80px;
+}
+header {
+    background: #ff758c;
+    color: white;
+    padding: 30px 20px; /* Reduced padding */
+    font-size: 2rem; /* Reduced font size */
+    font-family: 'Dancing Script', cursive;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+.intro, .countdown, .images, nav ul {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.image-box img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.image-box img:hover {
+    transform: scale(1.1);
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background: #ff758c;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+nav ul li a:hover {
+    background: #ff4f7b;
+}
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+
+
+.intro h2 {
+    font-size: 1.8rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Image Gallery */
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.image-box img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-box p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Countdown Timer Section */
+.countdown {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* Navigation Bar */
+nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff6347;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: 2px solid #ff6347;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+/* Section Backgrounds */
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Background Styles for Specific Pages */
+body.index {
+    background: url('background-home.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.page1, body.page2, body.page3 {
+    background: url('background-pages.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6347;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.map iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Styles for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
